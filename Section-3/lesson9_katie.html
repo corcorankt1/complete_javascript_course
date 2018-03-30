@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Lesson 9
+        </title>
+    </head>
+    <body>
+        <script>
+            const array = [1,2,56,4,39, 82,9,45,67,12, "cat","dog", "fish","lizard"];
+            const question = prompt(`what do you want to remove?`);
+            console.log(array);
+            const answer = array.indexOf(question);
+            const remover = (answer >-1) ? array.splice(answer,1) : alert("Item not found");
+            console.log(array);
+        </script>
+    </body>
+</html>
