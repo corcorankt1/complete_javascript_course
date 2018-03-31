@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        Lesson 15
+    </title>
+</head>
+
+<body>
+    <script>
+        const lamp = {
+            color: 'white',
+            power: 'electricity',
+            bulbs: 1,
+            base: 'round'
+        }
+        // const question = prompt(`What do you want to know about the car`); 
+        // const message = `The car has ${lamp[question]} ${question}.`;
+        // console.log(message);
+
+        for (let prop in lamp) {
+            console.log(`The ${prop} of the lamp is ${lamp[prop]}`);
+        }
+        const dan = {
+            eyes: "blue",
+            hair: "blonde",
+            job: "designer"
+        };
+        const friends = {
+            friend1: dan,
+            friend2: {
+                eyes: 'brown',
+                hair: 'brown',
+                job: 'developer'
+            }
+        };
+        const friends1 = [
+            dan,
+            {
+                eyes: 'brown',
+                hair: 'brown',
+                job: 'developer'
+            }
+        ];
+
+        console.log(friends1);
+    </script>
+</body>
+
+</html>
